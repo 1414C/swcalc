@@ -1,0 +1,3 @@
+module SwiftCalcParser {
+    header "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/include/SwiftCalcParser-Swift.h"
+}

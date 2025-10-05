@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/master.swiftdeps"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.dia"
+  }
+}

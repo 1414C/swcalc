@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/master.swiftdeps"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Examples.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Position.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/SwiftCalcTokenizer.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Token.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenType.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenizerError.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.dia"
+  }
+}

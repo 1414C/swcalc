@@ -34,6 +34,9 @@ public enum OperatorType {
 // MARK: - Equatable
 extension OperatorType: Equatable {}
 
+// MARK: - Hashable
+extension OperatorType: Hashable {}
+
 // MARK: - CustomStringConvertible
 extension OperatorType: CustomStringConvertible {
     public var description: String {
@@ -115,6 +118,9 @@ public enum TokenType {
 
 // MARK: - Equatable
 extension TokenType: Equatable {}
+
+// MARK: - Hashable
+extension TokenType: Hashable {}
 
 // MARK: - CustomStringConvertible
 extension TokenType: CustomStringConvertible {

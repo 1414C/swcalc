@@ -13,12 +13,27 @@ let package = Package(
         .library(
             name: "SwiftCalcTokenizer",
             targets: ["SwiftCalcTokenizer"]),
+        .library(
+            name: "SwiftCalcParser",
+            targets: ["SwiftCalcParser"]),
+        .executable(
+            name: "swift-calc-demo",
+            targets: ["SwiftCalcDemo"]),
     ],
     targets: [
         .target(
             name: "SwiftCalcTokenizer"),
+        .target(
+            name: "SwiftCalcParser",
+            dependencies: ["SwiftCalcTokenizer"]),
+        .executableTarget(
+            name: "SwiftCalcDemo",
+            dependencies: ["SwiftCalcTokenizer", "SwiftCalcParser"]),
         .testTarget(
             name: "SwiftCalcTokenizerTests",
             dependencies: ["SwiftCalcTokenizer"]),
+        .testTarget(
+            name: "SwiftCalcParserTests",
+            dependencies: ["SwiftCalcParser", "SwiftCalcTokenizer"]),
     ]
 )

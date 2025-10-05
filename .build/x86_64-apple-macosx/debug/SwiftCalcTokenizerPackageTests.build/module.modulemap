@@ -1,0 +1,4 @@
+module SwiftCalcTokenizerPackageTests {
+    header "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/SwiftCalcTokenizerPackageTests-Swift.h"
+    requires objc
+}

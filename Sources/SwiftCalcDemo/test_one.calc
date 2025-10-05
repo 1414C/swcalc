@@ -1,0 +1,2 @@
+result = (a + b) * sin(x) - 2 ^ 3
+result2 = result * 2

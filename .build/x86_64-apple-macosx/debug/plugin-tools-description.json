@@ -1,0 +1,1892 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.xctest/Contents/MacOS/SwiftCalcTokenizerPackageTests",
+      "packagePath" : "/Users/stevem/SwiftDev/swcalc",
+      "productName" : "SwiftCalcTokenizerPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SwiftCalcDemo-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/sources",
+      "importPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcDemo/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParser.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "SwiftCalcDemo",
+      "moduleOutputPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcDemo.swiftmodule",
+      "objects" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx10.15",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "SwiftCalcDemo_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swcalc"
+      ],
+      "outputFileMapPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcDemo.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcDemo/main.swift"
+      ],
+      "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftCalcParser-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/sources",
+      "importPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Assignment.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/BinaryOperation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/FunctionCall.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Identifier.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Literal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/ParenthesizedExpression.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTAnalysis.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDebugVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDepthVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNode.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNodeCountVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTSerializationVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTStringVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTraversal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTreeVisualizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Examples.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ParseError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Parser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftCalcParser",
+      "moduleOutputPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParser.swiftmodule",
+      "objects" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Assignment.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/BinaryOperation.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/FunctionCall.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Identifier.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Literal.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTAnalysis.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDebugVisitor.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDepthVisitor.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNode.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNodeCountVisitor.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTSerializationVisitor.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTStringVisitor.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTraversal.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTreeVisualizer.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTVisitor.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Examples.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParseError.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx10.15",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/include/SwiftCalcParser-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swcalc"
+      ],
+      "outputFileMapPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Assignment.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/BinaryOperation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/FunctionCall.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Identifier.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Literal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTAnalysis.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDebugVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDepthVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNode.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNodeCountVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTSerializationVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTStringVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTraversal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTreeVisualizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Examples.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParseError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParser.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Assignment.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/BinaryOperation.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/FunctionCall.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Identifier.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Literal.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/ParenthesizedExpression.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTAnalysis.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDebugVisitor.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDepthVisitor.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNode.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNodeCountVisitor.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTSerializationVisitor.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTStringVisitor.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTraversal.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTreeVisualizer.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTVisitor.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Examples.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ParseError.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Parser.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift"
+      ],
+      "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftCalcParserTests-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/sources",
+      "importPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParser.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftCalcParserTests",
+      "moduleOutputPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParserTests.swiftmodule",
+      "objects" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swcalc"
+      ],
+      "outputFileMapPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParserTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift",
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift",
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift",
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift"
+      ],
+      "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftCalcTokenizer-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/sources",
+      "importPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Examples.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Position.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/SwiftCalcTokenizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Token.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenType.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenizerError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftCalcTokenizer",
+      "moduleOutputPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizer.swiftmodule",
+      "objects" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx10.15",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/include/SwiftCalcTokenizer-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swcalc"
+      ],
+      "outputFileMapPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizer.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Examples.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Position.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/SwiftCalcTokenizer.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Token.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenType.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenizerError.swift"
+      ],
+      "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftCalcTokenizerPackageTests-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/sources",
+      "importPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizerTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParserTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftCalcTokenizerPackageTests",
+      "moduleOutputPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizerPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx10.15",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/include/SwiftCalcTokenizerPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swcalc"
+      ],
+      "outputFileMapPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizerPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftCalcTokenizerTests-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/sources",
+      "importPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcTokenizerTests/SwiftCalcTokenizerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizer.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftCalcTokenizerTests",
+      "moduleOutputPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizerTests.swiftmodule",
+      "objects" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swcalc"
+      ],
+      "outputFileMapPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcTokenizerTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcTokenizerTests/SwiftCalcTokenizerTests.swift"
+      ],
+      "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SwiftCalcDemo" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftCalcDemo",
+      "-package-name",
+      "swcalc",
+      "-c",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcDemo/main.swift",
+      "-I",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx10.15",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "SwiftCalcDemo_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swcalc",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftCalcParser" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftCalcParser",
+      "-package-name",
+      "swcalc",
+      "-c",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Assignment.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/BinaryOperation.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/FunctionCall.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Identifier.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Literal.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/ParenthesizedExpression.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTAnalysis.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDebugVisitor.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDepthVisitor.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNode.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNodeCountVisitor.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTSerializationVisitor.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTStringVisitor.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTraversal.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTreeVisualizer.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTVisitor.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Examples.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ParseError.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Parser.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift",
+      "-I",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx10.15",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/include/SwiftCalcParser-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swcalc",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftCalcParserTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftCalcParserTests",
+      "-package-name",
+      "swcalc",
+      "-c",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift",
+      "-I",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swcalc",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftCalcTokenizer" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftCalcTokenizer",
+      "-package-name",
+      "swcalc",
+      "-c",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Examples.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Position.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/SwiftCalcTokenizer.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Token.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenType.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenizerError.swift",
+      "-I",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx10.15",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/include/SwiftCalcTokenizer-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swcalc",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftCalcTokenizerPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftCalcTokenizerPackageTests",
+      "-package-name",
+      "swcalc",
+      "-c",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx10.15",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/include/SwiftCalcTokenizerPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swcalc",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SwiftCalcTokenizerTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftCalcTokenizerTests",
+      "-package-name",
+      "swcalc",
+      "-c",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcTokenizerTests/SwiftCalcTokenizerTests.swift",
+      "-I",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swcalc",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SwiftCalcDemo" : [
+      "SwiftCalcParser",
+      "SwiftCalcTokenizer"
+    ],
+    "SwiftCalcParser" : [
+      "SwiftCalcTokenizer"
+    ],
+    "SwiftCalcParserTests" : [
+      "SwiftCalcParser",
+      "SwiftCalcTokenizer"
+    ],
+    "SwiftCalcTokenizer" : [
+
+    ],
+    "SwiftCalcTokenizerPackageTests" : [
+      "SwiftCalcParserTests",
+      "SwiftCalcParser",
+      "SwiftCalcTokenizerTests",
+      "SwiftCalcTokenizer"
+    ],
+    "SwiftCalcTokenizerTests" : [
+      "SwiftCalcTokenizer"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcDemo/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/sources"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Assignment.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/BinaryOperation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/FunctionCall.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Identifier.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Literal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/ParenthesizedExpression.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTAnalysis.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDebugVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDepthVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNode.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTNodeCountVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTSerializationVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTStringVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTraversal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTTreeVisualizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTVisitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Examples.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ParseError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Parser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/sources"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/sources"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Examples.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Position.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/SwiftCalcTokenizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/Token.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenType.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcTokenizer/TokenizerError.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/sources"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/sources"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTAnalysis.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDebugVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDepthVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNode.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNodeCountVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTSerializationVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTStringVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTraversal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTreeVisualizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Assignment.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/BinaryOperation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Examples.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/FunctionCall.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Identifier.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Literal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParseError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcTokenizerTests/SwiftCalcTokenizerTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/sources"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-calc-demo-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-calc-demo-entitlement.plist"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-calc-demo.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcDemo.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTAnalysis.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDebugVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDepthVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNode.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTNodeCountVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTSerializationVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTStringVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTraversal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTTreeVisualizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Assignment.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/BinaryOperation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Examples.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/FunctionCall.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Identifier.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Literal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParseError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Examples.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Position.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/SwiftCalcTokenizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/Token.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenType.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizer.build/TokenizerError.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-calc-demo.product/Objects.LinkFileList"
+    },
+    "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

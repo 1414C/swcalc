@@ -1,0 +1,1 @@
+result = sin(cos(x + 1)) * 2

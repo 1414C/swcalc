@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/master.swiftdeps"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcTokenizerTests/SwiftCalcTokenizerTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcTokenizerTests.build/SwiftCalcTokenizerTests.dia"
+  }
+}
