@@ -1,2 +1,5 @@
-result = (a + b) * sin(x) - 2 ^ 3
-result2 = result * 2
+// Multi-line calculator program example
+x = 5
+y = 3
+result = (x + y) * sin(x) - 2 ^ 3
+final = result * y + cos(x)

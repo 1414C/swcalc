@@ -1,0 +1,26 @@
+// Complex mathematical expressions example
+// This file demonstrates various calculator language features
+
+// Basic arithmetic
+a = 10
+b = 5
+sum = a + b
+difference = a - b
+product = a * b
+quotient = a / b
+remainder = a % b
+power = a ^ 2
+
+// Nested expressions with parentheses
+complex = (a + b) * (a - b) / (a + 1)
+nested = ((a * 2) + (b * 3)) ^ 2
+
+// Function calls
+trigonometry = sin(a) + cos(b) - tan(a / b)
+logarithms = log(a) + exp(b) + sqrt(a * b)
+
+// Mixed operations
+final_result = (sin(a) * cos(b)) + (log(a) / exp(b)) - sqrt(complex)
+
+// Deeply nested expression
+deep = sin(cos(tan(log(exp(sqrt(a))))))

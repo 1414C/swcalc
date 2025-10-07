@@ -52,4 +52,10 @@ public struct ASTDepthVisitor: ASTVisitor {
         let innerDepth = try node.expression.accept(self)
         return 1 + innerDepth
     }
+    
+    public func visitProgram(_ node: Program) throws -> Int {
+        let statementDepths = try node.statements.map { try $0.accept(self) }
+        let maxStatementDepth = statementDepths.max() ?? 0
+        return 1 + maxStatementDepth
+    }
 }

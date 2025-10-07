@@ -73,4 +73,9 @@ public struct ASTStringVisitor: ASTVisitor {
         let inner = try node.expression.accept(self)
         return "(\(inner))"
     }
+    
+    public func visitProgram(_ node: Program) throws -> String {
+        let statements = try node.statements.map { try $0.accept(self) }
+        return statements.joined(separator: "\n")
+    }
 }

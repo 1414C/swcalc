@@ -110,6 +110,11 @@ public enum TokenType {
     /// Indicates that the tokenizer has reached the end of the input
     case eof                        
     
+    /// Comments starting with //
+    /// 
+    /// Single-line comments that extend to the end of the line
+    case comment
+    
     /// Invalid or malformed tokens
     /// 
     /// Generated when the tokenizer encounters invalid characters or malformed syntax
@@ -132,6 +137,7 @@ extension TokenType: CustomStringConvertible {
         case .leftParen: return "LPAREN"
         case .rightParen: return "RPAREN"
         case .assign: return "ASSIGN"
+        case .comment: return "COMMENT"
         case .eof: return "EOF"
         case .error: return "ERROR"
         }

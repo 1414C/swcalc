@@ -158,6 +158,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Program.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift"
         },
         {
@@ -239,6 +243,7 @@
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Identifier.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Literal.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTAnalysis.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTDebugVisitor.swift.o",
@@ -339,6 +344,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o"
         },
         {
@@ -410,6 +419,7 @@
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Identifier.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Literal.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/ParenthesizedExpression.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Program.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTAnalysis.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDebugVisitor.swift",
@@ -1004,6 +1014,7 @@
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Identifier.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Literal.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/ParenthesizedExpression.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Program.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTAnalysis.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDebugVisitor.swift",
@@ -1447,6 +1458,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Program.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift"
         },
         {
@@ -1667,6 +1682,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o"
         },
         {
@@ -1838,6 +1857,10 @@
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.swift.o"
         },
         {
           "kind" : "file",

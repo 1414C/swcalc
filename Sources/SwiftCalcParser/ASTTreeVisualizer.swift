@@ -128,6 +128,26 @@ public final class ASTTreeVisualizer {
             \(innerResult)
             """
         }
+        
+        func visitProgram(_ node: Program) throws -> String {
+            let header = nodeHeader("Program: (\(node.statements.count) statements)")
+            
+            if node.statements.isEmpty {
+                return header
+            }
+            
+            var result = header + "\n"
+            for (index, statement) in node.statements.enumerated() {
+                let isLastStmt = index == node.statements.count - 1
+                let stmtResult = try statement.accept(childVisitor(isLast: isLastStmt))
+                result += stmtResult
+                if !isLastStmt {
+                    result += "\n"
+                }
+            }
+            
+            return result
+        }
     }
 }
 

@@ -1,0 +1,4 @@
+// Simple calculator example
+x = 42
+y = x + 8
+result = y * 2

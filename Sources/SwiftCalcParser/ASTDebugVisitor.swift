@@ -144,4 +144,18 @@ public struct ASTDebugVisitor: ASTVisitor {
         \(inner)
         """
     }
+    
+    public func visitProgram(_ node: Program) throws -> String {
+        let posInfo = positionInfo(node.position)
+        let typeInfo = self.typeInfo("Program")
+        
+        var result = "\(indent)\(typeInfo) (\(node.statements.count) statements)\(posInfo)"
+        
+        for (index, statement) in node.statements.enumerated() {
+            let stmtResult = try statement.accept(nextLevel())
+            result += "\n\(indent)\(indentString)statement[\(index)]:\n\(stmtResult)"
+        }
+        
+        return result
+    }
 }

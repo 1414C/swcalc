@@ -4,6 +4,7 @@
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Identifier.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Literal.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/ParenthesizedExpression.swift
+/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Program.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTAnalysis.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ASTDebugVisitor.swift

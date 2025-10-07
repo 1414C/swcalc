@@ -163,6 +163,96 @@ public class Parser {
         return (expression, collectedErrors)
     }
     
+    /// Parses multiple statements/expressions from the token stream
+    /// 
+    /// This method parses a sequence of expressions separated by newlines or semicolons,
+    /// returning a Program node that contains all the parsed statements. This enables
+    /// parsing of multi-line calculator programs.
+    /// 
+    /// - Returns: A Program node containing all parsed statements
+    /// - Throws: ParseError if syntax errors are encountered
+    public func parseProgram() throws -> Program {
+        // Reset parser state to beginning
+        resetParserState()
+        
+        // Handle empty token array
+        guard !tokens.isEmpty else {
+            throw ParseError.unexpectedEndOfInput(Position(line: 1, column: 1))
+        }
+        
+        // Check for error tokens from tokenizer before parsing
+        try validateTokensForErrors()
+        
+        // Record start of parsing
+        recordOperation("parseProgram", context: "main")
+        
+        var statements: [Expression] = []
+        let startPosition = currentToken?.position ?? Position(line: 1, column: 1)
+        
+        // Parse statements until we reach EOF
+        while !isAtEnd() {
+            // Skip any newlines or semicolons at the beginning
+            skipStatementSeparators()
+            
+            // If we've reached EOF after skipping separators, we're done
+            if isAtEnd() {
+                break
+            }
+            
+            // Parse the next expression/statement
+            let statement = try parseExpression()
+            statements.append(statement)
+            
+            // Skip trailing separators
+            skipStatementSeparators()
+        }
+        
+        // Validate that we've consumed all tokens
+        try validateEndOfInput()
+        
+        // Record completion of parsing
+        recordOperation("parseProgram_complete", context: "main")
+        
+        return Program(statements: statements, position: startPosition)
+    }
+    
+    /// Skips comment tokens
+    /// 
+    /// This method advances the parser past any comment tokens, which should
+    /// be ignored during parsing.
+    private func skipComments() {
+        while let token = currentToken, token.type == .comment {
+            advance()
+        }
+    }
+    
+    /// Skips statement separators (newlines, semicolons) and comments
+    /// 
+    /// This method advances the parser past any newline, semicolon, or comment tokens
+    /// that separate statements in a multi-statement program.
+    private func skipStatementSeparators() {
+        while let token = currentToken {
+            if token.type == .eof {
+                break
+            }
+            
+            // Skip comment tokens
+            if token.type == .comment {
+                advance()
+                continue
+            }
+            
+            // If we encounter any actual content token, stop skipping
+            switch token.type {
+            case .number, .identifier, .leftParen, .operator(_), .assign:
+                return
+            default:
+                // Skip unknown tokens that might be separators
+                advance()
+            }
+        }
+    }
+    
     /// Parses a statement (for future extensibility)
     /// 
     /// This method is provided for future language extensions that may
@@ -1185,6 +1275,9 @@ public class Parser {
     /// - Returns: An Expression representing the parsed primary expression
     /// - Throws: ParseError if no valid primary expression is found
     private func parsePrimary() throws -> Expression {
+        // Skip any comments before parsing
+        skipComments()
+        
         guard let token = currentToken else {
             throw createUnexpectedEndOfInputError(expected: [.number, .identifier, .leftParen])
         }

@@ -98,6 +98,16 @@ public struct ASTSerializationVisitor: ASTVisitor {
             "position": serializePosition(node.position)
         ]
     }
+    
+    public func visitProgram(_ node: Program) throws -> [String: Any] {
+        let statements = try node.statements.map { try $0.accept(self) }
+        
+        return [
+            "type": "Program",
+            "statements": statements,
+            "position": serializePosition(node.position)
+        ]
+    }
 }
 
 /// Utility functions for AST serialization

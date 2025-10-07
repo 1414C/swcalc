@@ -319,6 +319,14 @@ public struct ParserExamples {
             func visit(_ node: ParenthesizedExpression) throws -> Set<String> {
                 return try node.expression.accept(self)
             }
+            
+            func visitProgram(_ node: Program) throws -> Set<String> {
+                var variables = Set<String>()
+                for statement in node.statements {
+                    variables.formUnion(try statement.accept(self))
+                }
+                return variables
+            }
         }
         
         let expressions = [

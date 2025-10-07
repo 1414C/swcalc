@@ -222,6 +222,8 @@ extension ParseError: LocalizedError {
             return "opening parenthesis '('"
         case .rightParen:
             return "closing parenthesis ')'"
+        case .comment:
+            return "comment '\(token.value)'"
         case .eof:
             return "end of input"
         case .error:
@@ -249,6 +251,8 @@ extension ParseError: LocalizedError {
             return "opening parenthesis '('"
         case .rightParen:
             return "closing parenthesis ')'"
+        case .comment:
+            return "a comment"
         case .eof:
             return "end of input"
         case .error:

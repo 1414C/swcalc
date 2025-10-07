@@ -51,7 +51,18 @@ func main() {
         // Parse the tokens
         print("🌳 Parsing...")
         let parser = Parser(tokens: tokens)
-        let ast = try parser.parse()
+        
+        // Try to parse as a program (multiple statements) first
+        let ast: CalcExpression
+        do {
+            ast = try parser.parseProgram()
+            print("✅ Parsed as multi-statement program")
+        } catch {
+            // If that fails, try parsing as a single expression
+            print("ℹ️  Falling back to single expression parsing")
+            let singleParser = Parser(tokens: tokens)
+            ast = try singleParser.parse()
+        }
         
         // Display AST
         try displayAST(ast)

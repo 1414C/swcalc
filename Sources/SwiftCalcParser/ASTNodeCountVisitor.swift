@@ -52,4 +52,10 @@ public struct ASTNodeCountVisitor: ASTVisitor {
         let innerCount = try node.expression.accept(self)
         return 1 + innerCount
     }
+    
+    public func visitProgram(_ node: Program) throws -> Int {
+        let statementCounts = try node.statements.map { try $0.accept(self) }
+        let totalStatementCount = statementCounts.reduce(0, +)
+        return 1 + totalStatementCount
+    }
 }

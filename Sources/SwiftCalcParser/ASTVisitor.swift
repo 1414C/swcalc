@@ -82,4 +82,11 @@ public protocol ASTVisitor {
     /// - Returns: The result of processing this node
     /// - Throws: Any error encountered during processing
     func visit(_ node: ParenthesizedExpression) throws -> Result
+    
+    /// Visit a program node
+    /// 
+    /// - Parameter node: The program node to visit
+    /// - Returns: The result of processing this node
+    /// - Throws: Any error encountered during processing
+    func visitProgram(_ node: Program) throws -> Result
 }

@@ -44,6 +44,13 @@
     "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swiftdeps",
     "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.dia"
   },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/Program.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Program.dia"
+  },
   "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/AST/UnaryOperation.swift": {
     "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.d",
     "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o",

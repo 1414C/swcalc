@@ -201,6 +201,29 @@ public class Tokenizer: Sequence, IteratorProtocol {
         return Token(type: .identifier, value: identifierString, position: startPosition)
     }
     
+    /// Scans a comment starting with //
+    /// 
+    /// This method processes single-line comments that start with // and continue
+    /// to the end of the line. The comment text (excluding the //) is captured
+    /// as the token value.
+    /// 
+    /// - Parameter startPosition: The position where the comment starts
+    /// - Returns: A comment token containing the comment text
+    private func scanComment(startPosition: Position) -> Token {
+        var commentString = "//"
+        
+        // Consume the second '/'
+        advance()
+        
+        // Scan until end of line or end of input
+        while let char = currentCharacter, char != "\n" {
+            commentString.append(char)
+            advance()
+        }
+        
+        return Token(type: .comment, value: commentString, position: startPosition)
+    }
+    
     /// Creates an error token for malformed numbers and invalid characters
     /// - Parameters:
     ///   - error: The tokenizer error that occurred
@@ -268,7 +291,14 @@ public class Tokenizer: Sequence, IteratorProtocol {
         case "*":
             return Token(type: .operator(.multiply), value: "*", position: tokenPosition)
         case "/":
-            return Token(type: .operator(.divide), value: "/", position: tokenPosition)
+            // Check if this is a comment (//) or division operator
+            if let nextChar = currentCharacter, nextChar == "/" {
+                // This is a comment, scan to end of line
+                return scanComment(startPosition: tokenPosition)
+            } else {
+                // This is a division operator
+                return Token(type: .operator(.divide), value: "/", position: tokenPosition)
+            }
         case "%":
             return Token(type: .operator(.modulo), value: "%", position: tokenPosition)
         case "^":
