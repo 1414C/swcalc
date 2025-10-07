@@ -2,6 +2,13 @@
   "": {
     "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/master.swiftdeps"
   },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTPassManagerTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests.dia"
+  },
   "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift": {
     "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.d",
     "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o",
@@ -16,6 +23,13 @@
     "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swiftdeps",
     "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.dia"
   },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/NumberTypeAnalysisTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests.dia"
+  },
   "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift": {
     "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.d",
     "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swift.o",
@@ -29,5 +43,12 @@
     "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests~partial.swiftmodule",
     "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swiftdeps",
     "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/VariableTypeInferenceTests.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests.dia"
   }
 }

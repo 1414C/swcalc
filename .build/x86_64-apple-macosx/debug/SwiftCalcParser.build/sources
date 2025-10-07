@@ -19,4 +19,9 @@
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Examples.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ParseError.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Parser.swift
+/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPass.swift
+/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPassManager.swift
+/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/AnnotatedASTVisualizer.swift
+/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/NumberTypeAnalysisPass.swift
+/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/VariableTypeInferencePass.swift
 /Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift

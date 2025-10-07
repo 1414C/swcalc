@@ -149,6 +149,41 @@
     "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.swiftdeps",
     "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.dia"
   },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPass.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPassManager.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/AnnotatedASTVisualizer.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/NumberTypeAnalysisPass.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.dia"
+  },
+  "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/VariableTypeInferencePass.swift": {
+    "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.d",
+    "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.swift.o",
+    "swiftmodule": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass~partial.swiftmodule",
+    "swift-dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.swiftdeps",
+    "diagnostics": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.dia"
+  },
   "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift": {
     "dependencies": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.d",
     "object": "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o",

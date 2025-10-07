@@ -218,6 +218,26 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPass.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPassManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/AnnotatedASTVisualizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/NumberTypeAnalysisPass.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/VariableTypeInferencePass.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift"
         },
         {
@@ -258,6 +278,11 @@
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Examples.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParseError.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/Parser.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o"
       ],
       "otherArguments" : [
@@ -404,6 +429,26 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/SwiftCalcParser.swift.o"
         },
         {
@@ -434,6 +479,11 @@
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Examples.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ParseError.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Parser.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPass.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPassManager.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/AnnotatedASTVisualizer.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/NumberTypeAnalysisPass.swift",
+        "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/VariableTypeInferencePass.swift",
         "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift"
       ],
       "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build",
@@ -446,6 +496,10 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTPassManagerTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift"
         },
         {
@@ -454,11 +508,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/NumberTypeAnalysisTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift"
         },
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/VariableTypeInferenceTests.swift"
         },
         {
           "kind" : "file",
@@ -481,10 +543,13 @@
       "moduleName" : "SwiftCalcParserTests",
       "moduleOutputPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParserTests.swiftmodule",
       "objects" : [
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests.swift.o",
         "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swift.o",
-        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swift.o"
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swift.o",
+        "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -545,11 +610,19 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/DebuggingTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests.swift.o"
         },
         {
           "kind" : "file",
@@ -561,15 +634,22 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules/SwiftCalcParserTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTPassManagerTests.swift",
         "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift",
         "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift",
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/NumberTypeAnalysisTests.swift",
         "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift",
-        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift"
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift",
+        "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/VariableTypeInferenceTests.swift"
       ],
       "tempsPath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build",
       "wholeModuleOptimization" : false
@@ -1029,6 +1109,11 @@
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Examples.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/ParseError.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Parser.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPass.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPassManager.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/AnnotatedASTVisualizer.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/NumberTypeAnalysisPass.swift",
+      "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/VariableTypeInferencePass.swift",
       "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift",
       "-I",
       "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
@@ -1096,10 +1181,13 @@
       "-package-name",
       "swcalc",
       "-c",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTPassManagerTests.swift",
       "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift",
       "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/NumberTypeAnalysisTests.swift",
       "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift",
       "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift",
+      "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/VariableTypeInferenceTests.swift",
       "-I",
       "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/Modules",
       "-target",
@@ -1518,6 +1606,26 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPass.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/ASTPassManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/AnnotatedASTVisualizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/NumberTypeAnalysisPass.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/Passes/VariableTypeInferencePass.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Sources/SwiftCalcParser/SwiftCalcParser.swift"
         }
       ],
@@ -1532,6 +1640,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTPassManagerTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift"
         },
         {
@@ -1540,11 +1652,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/NumberTypeAnalysisTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift"
         },
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/VariableTypeInferenceTests.swift"
         }
       ],
       "outputFilePath" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/sources"
@@ -1626,6 +1746,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTSerializationVisitor.swift.o"
         },
         {
@@ -1643,6 +1771,10 @@
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.swift.o"
         },
         {
           "kind" : "file",
@@ -1670,6 +1802,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swift.o"
         },
         {
@@ -1694,6 +1830,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTPassManagerTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/ASTVisitorTests.swift.o"
         },
         {
@@ -1702,11 +1846,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/NumberTypeAnalysisTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/PerformanceBenchmarkTests.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/SwiftCalcParserTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParserTests.build/VariableTypeInferenceTests.swift.o"
         },
         {
           "kind" : "file",
@@ -1804,6 +1956,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPass.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTPassManager.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTSerializationVisitor.swift.o"
         },
         {
@@ -1821,6 +1981,10 @@
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ASTVisitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/AnnotatedASTVisualizer.swift.o"
         },
         {
           "kind" : "file",
@@ -1848,6 +2012,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/NumberTypeAnalysisPass.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/ParenthesizedExpression.swift.o"
         },
         {
@@ -1869,6 +2037,10 @@
         {
           "kind" : "file",
           "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/UnaryOperation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stevem/SwiftDev/swcalc/.build/x86_64-apple-macosx/debug/SwiftCalcParser.build/VariableTypeInferencePass.swift.o"
         },
         {
           "kind" : "file",

@@ -1,4 +1,7 @@
+/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTPassManagerTests.swift
 /Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/ASTVisitorTests.swift
 /Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/DebuggingTests.swift
+/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/NumberTypeAnalysisTests.swift
 /Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/PerformanceBenchmarkTests.swift
 /Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/SwiftCalcParserTests.swift
+/Users/stevem/SwiftDev/swcalc/Tests/SwiftCalcParserTests/VariableTypeInferenceTests.swift

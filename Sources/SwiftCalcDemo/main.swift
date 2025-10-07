@@ -70,6 +70,9 @@ func main() {
         // Display additional analysis
         try displayAnalysis(ast)
         
+        // Run AST passes and display annotated AST
+        try displayASTPassAnalysisAndAnnotatedAST(ast)
+        
     } catch let error as TokenizerError {
         print("❌ Tokenizer Error: \(error.localizedDescription)")
         exit(1)
@@ -197,6 +200,121 @@ func displayAnalysis(_ ast: CalcExpression) throws {
     print("Complexity score: \(complexity)")
     
     print("─" * 40)
+    print()
+}
+
+/// Displays a final summary of all analysis results
+func displayFinalAnalysisSummary(_ results: ASTPassResults) {
+    print("🎯 Final Analysis Summary:")
+    print("─" * 40)
+    
+    var totalNumbers = 0
+    var totalVariables = 0
+    var integerCount = 0
+    var floatCount = 0
+    
+    // Aggregate number analysis
+    if let numberAnalysis = results.getNumberTypeAnalysis() {
+        totalNumbers = numberAnalysis.totalCount
+        integerCount += numberAnalysis.integerCount
+        floatCount += numberAnalysis.floatCount
+    }
+    
+    // Aggregate variable analysis
+    if let variableAnalysis = results.getVariableTypeInference() {
+        totalVariables = variableAnalysis.totalVariableCount
+        integerCount += variableAnalysis.integerVariableCount
+        floatCount += variableAnalysis.floatVariableCount
+    }
+    
+    print("📊 Type Distribution:")
+    print("  Total numeric literals: \(totalNumbers)")
+    print("  Total variables: \(totalVariables)")
+    print("  🔢 Integer types: \(integerCount) (\(totalNumbers + totalVariables > 0 ? String(format: "%.1f", Double(integerCount) / Double(totalNumbers + totalVariables) * 100) : "0")%)")
+    print("  🔣 Float types: \(floatCount) (\(totalNumbers + totalVariables > 0 ? String(format: "%.1f", Double(floatCount) / Double(totalNumbers + totalVariables) * 100) : "0")%)")
+    
+    // Show type promotion insights
+    if let variableAnalysis = results.getVariableTypeInference() {
+        let promotedVariables = variableAnalysis.variables.filter { $0.confidence < 1.0 }
+        if !promotedVariables.isEmpty {
+            print("\n⚡ Type Promotions Detected:")
+            for variable in promotedVariables {
+                print("  • \(variable.name): \(variable.reason)")
+            }
+        }
+    }
+    
+    print("─" * 40)
+}
+
+/// Displays AST pass analysis results and annotated AST
+func displayASTPassAnalysisAndAnnotatedAST(_ ast: CalcExpression) throws {
+    print("🔬 AST Pass Analysis:")
+    print("─" * 40)
+    
+    // Create pass manager with standard analysis passes
+    let passManager = ASTPassManager.withStandardAnalysis()
+    let results = try passManager.runPasses(on: ast)
+    
+    // Display number type analysis
+    if let numberAnalysis = results.getNumberTypeAnalysis() {
+        print("Number Type Analysis:")
+        print("  Total numbers: \(numberAnalysis.totalCount)")
+        print("  Integers: \(numberAnalysis.integerCount)")
+        print("  Floats: \(numberAnalysis.floatCount)")
+        
+        if !numberAnalysis.numbers.isEmpty {
+            print("  Number details:")
+            for number in numberAnalysis.numbers {
+                let typeIcon = number.type == .integer ? "🔢" : "🔣"
+                print("    \(typeIcon) \(number.value) (\(number.type)) at \(number.position.line):\(number.position.column)")
+            }
+        }
+    }
+    
+    // Display variable type inference
+    if let variableAnalysis = results.getVariableTypeInference() {
+        print("\nVariable Type Inference:")
+        print("  Total variables: \(variableAnalysis.totalVariableCount)")
+        print("  Integer variables: \(variableAnalysis.integerVariableCount)")
+        print("  Float variables: \(variableAnalysis.floatVariableCount)")
+        
+        if !variableAnalysis.variables.isEmpty {
+            print("  Variable details:")
+            for variable in variableAnalysis.variables {
+                let typeIcon = variable.inferredType == .integer ? "🔢" : "🔣"
+                let confidenceStr = String(format: "%.1f", variable.confidence * 100)
+                print("    \(typeIcon) \(variable.name): \(variable.inferredType) (\(confidenceStr)% confidence)")
+                print("      Reason: \(variable.reason)")
+                print("      First assigned at: \(variable.firstAssignmentPosition.line):\(variable.firstAssignmentPosition.column)")
+            }
+        }
+    }
+    
+    print("─" * 40)
+    print()
+    
+    // Display annotated AST with pass results
+    print("🎨 Annotated AST (with pass results):")
+    print("─" * 60)
+    
+    let annotatedTree = try AnnotatedASTVisualizer.visualize(ast, with: results)
+    print(annotatedTree)
+    
+    print("─" * 60)
+    print()
+    
+    // Display legend for annotations
+    print("📋 Annotation Legend:")
+    print("  🔢 Integer literal/variable")
+    print("  🔣 Float literal/variable")
+    print("  @line:col Position in source")
+    print("  val: Parsed numeric value")
+    print("  var:type Variable type inference")
+    print()
+    
+    // Display final analysis summary
+    displayFinalAnalysisSummary(results)
     print()
 }
 

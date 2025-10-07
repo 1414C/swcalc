@@ -1,0 +1,6 @@
+x = 10
+y = 3.14
+intResult = x + 5
+floatResult = y * 2.0
+mixedResult = x + y
+functionResult = sin(x)
