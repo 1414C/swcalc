@@ -20,6 +20,8 @@ A comprehensive Swift package for tokenizing and parsing calculator expressions.
 - **Function Calls**: Support for mathematical functions like `sin()`, `cos()`, `log()`, etc.
 - **Error Recovery**: Advanced error recovery mechanisms for better error reporting
 - **Visitor Pattern**: Extensible visitor pattern for AST analysis and transformation
+- **AST Pass System**: Modular analysis passes for semantic analysis and optimization
+- **Type Analysis**: Number type analysis and variable type inference with promotion rules
 - **Performance Benchmarks**: Built-in performance testing and analysis tools
 
 ### Demo Application
@@ -27,6 +29,8 @@ A comprehensive Swift package for tokenizing and parsing calculator expressions.
 - **Multi-Line File Support**: Process calculator programs from text files
 - **Visual AST Display**: Beautiful tree visualization of parsed expressions
 - **Comprehensive Analysis**: Detailed analysis of parsed expressions including complexity metrics
+- **AST Pass Analysis**: Demonstrates number type analysis and variable type inference
+- **Annotated AST Visualization**: Shows type information directly in the AST tree structure
 
 ## Installation
 
@@ -95,6 +99,49 @@ let programTokenizer = Tokenizer(input: program)
 let programTokens = try programTokenizer.tokenize()
 let programParser = Parser(tokens: programTokens)
 let programAST = try programParser.parseProgram()
+```
+
+### AST Pass System
+
+The parser includes a sophisticated pass system for semantic analysis and optimization:
+
+```swift
+import SwiftCalcParser
+import SwiftCalcTokenizer
+
+// Parse an expression with variables
+let input = """
+x = 10
+y = 3.14
+result = x + y
+"""
+let tokenizer = Tokenizer(input: input)
+let tokens = try tokenizer.tokenize()
+let parser = Parser(tokens: tokens)
+let ast = try parser.parseProgram()
+
+// Run analysis passes
+let passManager = ASTPassManager.withStandardAnalysis()
+let results = try passManager.runPasses(on: ast)
+
+// Get number type analysis
+if let numberAnalysis = results.getNumberTypeAnalysis() {
+    print("Found \(numberAnalysis.totalCount) numbers:")
+    print("  Integers: \(numberAnalysis.integerCount)")
+    print("  Floats: \(numberAnalysis.floatCount)")
+}
+
+// Get variable type inference
+if let variableAnalysis = results.getVariableTypeInference() {
+    print("Found \(variableAnalysis.totalVariableCount) variables:")
+    for variable in variableAnalysis.variables {
+        print("  \(variable.name): \(variable.inferredType)")
+    }
+}
+
+// Generate annotated AST visualization
+let annotatedAST = try AnnotatedASTVisualizer.visualize(ast, with: results)
+print(annotatedAST)
 ```
 
 ## Usage Examples
@@ -249,6 +296,147 @@ final = result * y + cos(x)
 - End of file: `EOF`
 - Error tokens for invalid input
 
+## AST Pass System
+
+The parser includes a modular pass system for semantic analysis and code optimization. Passes analyze the AST to extract information, perform type checking, and enable advanced features.
+
+### Available Passes
+
+#### NumberTypeAnalysisPass
+Analyzes numeric literals in the AST to determine their types (integer vs float).
+
+**Features:**
+- Identifies all numeric literals in expressions
+- Classifies numbers as integers (`42`, `0`) or floats (`3.14`, `2.0`)
+- Provides position information for each number
+- Calculates type distribution statistics
+
+**Example:**
+```swift
+let pass = NumberTypeAnalysisPass()
+let result = try pass.run(on: ast)
+
+print("Total numbers: \(result.totalCount)")
+print("Integers: \(result.integerCount)")
+print("Floats: \(result.floatCount)")
+
+for number in result.numbers {
+    print("\(number.value): \(number.type) at \(number.position)")
+}
+```
+
+#### VariableTypeInferencePass
+Infers variable types based on assignments and expressions using type promotion rules.
+
+**Type Promotion Rules:**
+- `integer op integer = integer`
+- `integer op float = float`
+- `float op float = float`
+
+**Features:**
+- Analyzes variable assignments to infer optimal types
+- Handles type promotion when mixing integers and floats
+- Tracks confidence levels for type inference decisions
+- Provides detailed reasoning for each type decision
+- Detects and reports type promotions
+
+**Example:**
+```swift
+// First run number analysis (required dependency)
+let numberPass = NumberTypeAnalysisPass()
+let numberResult = try numberPass.run(on: ast)
+
+// Then run variable type inference
+let typePass = VariableTypeInferencePass()
+let typeResult = try typePass.run(on: ast, with: numberResult)
+
+for variable in typeResult.variables {
+    print("\(variable.name): \(variable.inferredType)")
+    print("  Confidence: \(variable.confidence * 100)%")
+    print("  Reason: \(variable.reason)")
+}
+```
+
+### Pass Manager
+
+The `ASTPassManager` coordinates multiple passes and manages dependencies:
+
+```swift
+// Create manager with standard analysis passes
+let manager = ASTPassManager.withStandardAnalysis()
+
+// Or create custom manager
+let customManager = ASTPassManager()
+customManager.addPass(NumberTypeAnalysisPass())
+customManager.addPass(VariableTypeInferencePass())
+
+// Run all passes
+let results = try manager.runPasses(on: ast)
+
+// Access specific results
+let numberAnalysis = results.getNumberTypeAnalysis()
+let variableAnalysis = results.getVariableTypeInference()
+```
+
+### Annotated AST Visualization
+
+The pass system includes enhanced AST visualization that shows analysis results:
+
+```swift
+// Run passes and get results
+let results = try passManager.runPasses(on: ast)
+
+// Generate annotated visualization
+let annotatedAST = try AnnotatedASTVisualizer.visualize(ast, with: results)
+print(annotatedAST)
+```
+
+**Example Output:**
+```
+└── Program: (3 statements) [@1:1]
+    ├── Assignment: = [@1:3]
+    │   ├── Identifier: x [@1:1, 🔢 var:integer]
+    │   └── Literal: 10 [@1:5, 🔢 integer, val: 10.0]
+    ├── Assignment: = [@2:3]
+    │   ├── Identifier: y [@2:1, 🔣 var:float]
+    │   └── Literal: 3.14 [@2:5, 🔣 float, val: 3.14]
+    └── Assignment: = [@3:8]
+        ├── Identifier: result [@3:1, 🔣 var:float]
+        └── BinaryOp: + [@3:10]
+            ├── Identifier: x [@3:8, 🔢 var:integer]
+            └── Identifier: y [@3:12, 🔣 var:float]
+```
+
+**Legend:**
+- `🔢` Integer literal/variable
+- `🔣` Float literal/variable
+- `@line:col` Position in source
+- `val:` Parsed numeric value
+- `var:type` Variable type inference
+
+### Type Promotion Example
+
+```swift
+// Calculator program with type promotion
+let program = """
+x = 5        // x starts as integer
+x = 3.14     // x promoted to float
+y = 10       // y is integer
+z = y + 2.5  // z becomes float (integer + float = float)
+"""
+
+let ast = try parseProgram(program)
+let results = try passManager.runPasses(on: ast)
+let variables = results.getVariableTypeInference()?.variables ?? []
+
+for variable in variables {
+    if variable.confidence < 1.0 {
+        print("Type promotion detected:")
+        print("  \(variable.name): \(variable.reason)")
+    }
+}
+```
+
 ## Demo Application
 
 The package includes a comprehensive command-line demo application that showcases the tokenizer and parser capabilities.
@@ -270,48 +458,112 @@ swift run swift-calc-demo Sources/SwiftCalcDemo/complex_example.calc
 ### Example Output
 
 ```
-📖 Reading input file: Sources/SwiftCalcDemo/simple_example.calc
+📖 Reading input file: Sources/SwiftCalcDemo/variable_example.calc
 📄 File content:
 ──────────────────────────────────────────────────
-// Simple calculator example
-x = 42
-y = x + 8
-result = y * 2
+x = 10
+y = 3.14
+intResult = x + 5
+floatResult = y * 2.0
+mixedResult = x + y
+functionResult = sin(x)
 ──────────────────────────────────────────────────
 
 🔍 Tokenizing...
-🔤 Tokens (15):
+🔤 Tokens (28):
 ────────────────────────────────────────────────────────────
-  1: [1:1]    COMMENT         →   '// Simple calculator example'
-  2: [2:1]    IDENTIFIER      →   'x'
-  3: [2:3]    ASSIGN          →   '='
-  4: [2:5]    NUMBER          →   '42'
+  1: [1:1]    IDENTIFIER      →   'x'
+  2: [1:3]    ASSIGN          →   '='
+  3: [1:5]    NUMBER          →   '10'
+  4: [2:1]    IDENTIFIER      →   'y'
+  5: [2:3]    ASSIGN          →   '='
+  6: [2:5]    NUMBER          →   '3.14'
   ...
 
 🌳 Parsing...
 ✅ Parsed as multi-statement program
 🌳 Abstract Syntax Tree:
 ────────────────────────────────────────────────────────────
-└── Program: (3 statements)
+└── Program: (6 statements)
     ├── Assignment: =
     │   ├── Identifier: x
-    │   └── Literal: 42
+    │   └── Literal: 10
     ├── Assignment: =
     │   ├── Identifier: y
+    │   └── Literal: 3.14
+    ├── Assignment: =
+    │   ├── Identifier: intResult
     │   └── BinaryOp: +
     │       ├── Identifier: x
-    │       └── Literal: 8
+    │       └── Literal: 5
     └── Assignment: =
-        ├── Identifier: result
-        └── BinaryOp: *
-            ├── Identifier: y
-            └── Literal: 2
+        ├── Identifier: functionResult
+        └── FunctionCall: sin(1)
+            └── Identifier: x
 
 📊 AST Analysis:
 ────────────────────────────────────────
-Total nodes: 14
+Total nodes: 26
 Tree depth: 4
-Complexity score: 22
+Complexity score: 34
+────────────────────────────────────────
+
+🔬 AST Pass Analysis:
+────────────────────────────────────────
+Number Type Analysis:
+  Total numbers: 4
+  Integers: 2
+  Floats: 2
+  Number details:
+    🔢 10 (integer) at 1:5
+    🔣 3.14 (float) at 2:5
+    🔢 5 (integer) at 3:17
+    🔣 2.0 (float) at 4:19
+
+Variable Type Inference:
+  Total variables: 6
+  Integer variables: 2
+  Float variables: 4
+  Variable details:
+    🔢 x: integer (100.0% confidence)
+      Reason: Inferred from assignment of integer expression
+      First assigned at: 1:3
+    🔣 y: float (100.0% confidence)
+      Reason: Inferred from assignment of float expression
+      First assigned at: 2:3
+    🔣 mixedResult: float (100.0% confidence)
+      Reason: Inferred from assignment of float expression
+      First assigned at: 5:13
+    🔣 functionResult: float (100.0% confidence)
+      Reason: Inferred from assignment of float expression
+      First assigned at: 6:16
+
+🎨 Annotated AST (with pass results):
+────────────────────────────────────────────────────────────
+└── Program: (6 statements) [@1:1]
+    ├── Assignment: = [@1:3]
+    │   ├── Identifier: x [@1:1, 🔢 var:integer]
+    │   └── Literal: 10 [@1:5, 🔢 integer, val: 10.0]
+    ├── Assignment: = [@2:3]
+    │   ├── Identifier: y [@2:1, 🔣 var:float]
+    │   └── Literal: 3.14 [@2:5, 🔣 float, val: 3.14]
+    ├── Assignment: = [@5:13]
+    │   ├── Identifier: mixedResult [@5:1, 🔣 var:float]
+    │   └── BinaryOp: + [@5:17]
+    │       ├── Identifier: x [@5:15, 🔢 var:integer]
+    │       └── Identifier: y [@5:19, 🔣 var:float]
+    └── Assignment: = [@6:16]
+        ├── Identifier: functionResult [@6:1, 🔣 var:float]
+        └── FunctionCall: sin(1) [@6:18]
+            └── Identifier: x [@6:22, 🔢 var:integer]
+
+🎯 Final Analysis Summary:
+────────────────────────────────────────
+📊 Type Distribution:
+  Total numeric literals: 4
+  Total variables: 6
+  🔢 Integer types: 4 (40.0%)
+  🔣 Float types: 6 (60.0%)
 ────────────────────────────────────────
 ```
 
@@ -330,6 +582,26 @@ circumference = 2 * pi * radius
 // More complex calculations
 hypotenuse = sqrt(a ^ 2 + b ^ 2)
 angle = sin(x) + cos(y)
+```
+
+### Type Promotion Example
+
+Create a file showing type promotion:
+
+```
+// type_promotion_example.calc
+x = 5        // x starts as integer
+x = 3.14     // x promoted to float
+y = 10       // y remains integer
+z = y + 2.5  // z becomes float (integer + float = float)
+result = sin(x) + cos(y)  // result is float (function calls return float)
+```
+
+When run with the demo, this shows:
+
+```
+⚡ Type Promotions Detected:
+  • x: Type promotion from integer to float due to assignment of float
 ```
 
 ## API Reference
@@ -482,6 +754,92 @@ Built-in visitors include:
 - `ASTDepthVisitor`: Calculate AST depth
 - `ASTNodeCountVisitor`: Count total nodes
 
+### AST Pass Types
+
+#### `ASTPassManager`
+Coordinates multiple AST passes and manages dependencies.
+
+```swift
+public class ASTPassManager {
+    public init(debugMode: Bool = false)
+    public static func withStandardAnalysis(debugMode: Bool = false) -> ASTPassManager
+    public func addPass<T: BaseASTPass<R>, R>(_ pass: T)
+    public func addStandardAnalysisPasses()
+    public func runPasses(on node: Expression) throws -> ASTPassResults
+}
+```
+
+#### `NumberTypeAnalysisPass`
+Analyzes numeric literals to determine their types.
+
+```swift
+public class NumberTypeAnalysisPass: BaseASTPass<NumberTypeAnalysisResult> {
+    public init(debugMode: Bool = false)
+    public func run(on node: Expression) throws -> NumberTypeAnalysisResult
+}
+```
+
+#### `VariableTypeInferencePass`
+Infers variable types based on usage and type promotion rules.
+
+```swift
+public class VariableTypeInferencePass: BaseASTPass<VariableTypeInferenceResult> {
+    public init(debugMode: Bool = false)
+    public func run(on node: Expression, with numberAnalysis: NumberTypeAnalysisResult) throws -> VariableTypeInferenceResult
+}
+```
+
+#### `NumberTypeAnalysisResult`
+Contains results from number type analysis.
+
+```swift
+public struct NumberTypeAnalysisResult {
+    public let numbers: [NumberTypeInfo]
+    public var totalCount: Int
+    public var integerCount: Int
+    public var floatCount: Int
+    
+    public func numbers(ofType type: NumberType) -> [NumberTypeInfo]
+}
+```
+
+#### `VariableTypeInferenceResult`
+Contains results from variable type inference.
+
+```swift
+public struct VariableTypeInferenceResult {
+    public let variables: [VariableTypeInfo]
+    public var totalVariableCount: Int
+    public var integerVariableCount: Int
+    public var floatVariableCount: Int
+    
+    public func variables(ofType type: NumberType) -> [VariableTypeInfo]
+    public func typeInfo(for name: String) -> VariableTypeInfo?
+}
+```
+
+#### `VariableTypeInfo`
+Information about an inferred variable type.
+
+```swift
+public struct VariableTypeInfo {
+    public let name: String
+    public let inferredType: NumberType
+    public let firstAssignmentPosition: Position
+    public let confidence: Double  // 0.0 to 1.0
+    public let reason: String
+}
+```
+
+#### `AnnotatedASTVisualizer`
+Creates enhanced AST visualizations with pass results.
+
+```swift
+public class AnnotatedASTVisualizer {
+    public static func visualize(_ node: Expression, with results: ASTPassResults) throws -> String
+}
+```
+
 ## Examples
 
 ### Tokenizer Examples
@@ -529,7 +887,7 @@ let tokens = try tokenizer.tokenize()
 let parser = Parser(tokens: tokens)
 let ast = try parser.parse()
 
-// Analyze the AST
+// Basic AST analysis
 let nodeCount = try ASTAnalysis.countNodes(in: ast)
 let depth = try ASTAnalysis.calculateDepth(of: ast)
 let identifiers = ASTAnalysis.extractIdentifiers(from: ast)
@@ -537,6 +895,62 @@ let complexity = try ASTAnalysis.calculateComplexity(of: ast)
 
 print("Nodes: \(nodeCount), Depth: \(depth), Complexity: \(complexity)")
 print("Variables: \(identifiers.joined(separator: ", "))")
+```
+
+### AST Pass Analysis
+
+```swift
+import SwiftCalcParser
+import SwiftCalcTokenizer
+
+// Parse a program with variables and type mixing
+let program = """
+x = 10
+y = 3.14
+result = x + y
+funcResult = sin(x)
+"""
+
+let tokenizer = Tokenizer(input: program)
+let tokens = try tokenizer.tokenize()
+let parser = Parser(tokens: tokens)
+let ast = try parser.parseProgram()
+
+// Run AST passes
+let passManager = ASTPassManager.withStandardAnalysis()
+let results = try passManager.runPasses(on: ast)
+
+// Analyze number types
+if let numberAnalysis = results.getNumberTypeAnalysis() {
+    print("Number Analysis:")
+    print("  Total: \(numberAnalysis.totalCount)")
+    print("  Integers: \(numberAnalysis.integerCount)")
+    print("  Floats: \(numberAnalysis.floatCount)")
+    
+    for number in numberAnalysis.numbers {
+        print("  \(number.value): \(number.type)")
+    }
+}
+
+// Analyze variable types
+if let variableAnalysis = results.getVariableTypeInference() {
+    print("\nVariable Analysis:")
+    print("  Total: \(variableAnalysis.totalVariableCount)")
+    
+    for variable in variableAnalysis.variables {
+        let confidence = String(format: "%.0f", variable.confidence * 100)
+        print("  \(variable.name): \(variable.inferredType) (\(confidence)%)")
+        
+        if variable.confidence < 1.0 {
+            print("    → \(variable.reason)")
+        }
+    }
+}
+
+// Generate annotated AST
+let annotatedAST = try AnnotatedASTVisualizer.visualize(ast, with: results)
+print("\nAnnotated AST:")
+print(annotatedAST)
 ```
 
 ## Testing
@@ -557,6 +971,9 @@ The package includes comprehensive test suites for both tokenizer and parser:
 - Error handling and recovery
 - Visitor pattern functionality
 - Multi-statement program parsing
+- AST pass system functionality
+- Number type analysis accuracy
+- Variable type inference and promotion rules
 - Performance benchmarks
 
 ### Performance Benchmarks
