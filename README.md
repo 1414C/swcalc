@@ -2,8 +2,6 @@
 
 A comprehensive Swift package for tokenizing and parsing calculator expressions. This package provides both a tokenizer that converts source text into tokens and a parser that builds Abstract Syntax Trees (ASTs) from those tokens. It supports multi-line programs, comments, and comprehensive mathematical expressions.
 
-Test git access.
-
 ## Features
 
 ### Tokenizer (SwiftCalcTokenizer)
